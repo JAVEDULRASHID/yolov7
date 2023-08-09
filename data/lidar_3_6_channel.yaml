@@ -1,0 +1,21 @@
+# YOLOv5 🚀 by Ultralytics, AGPL-3.0 license
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+#parent path: ../datasets/LIDAR_merge_data  # dataset root dir
+#child path: /images/train/intensity  # dataset train intensity
+#child path: /images/train/range  # dataset train range
+
+# Similarly for val dataset
+
+path: ../datasets/LIDAR_merge_data  # dataset root dir
+train: images/train/intensity  # train images (relative to 'path') 80 images
+val: images/val/intensity  # val images (relative to 'path') 10 images
+test:  # test images (optional)
+
+# Classes
+names:
+  0: hektometer
+  1: lichtsignal
+  2: lichtsignal_Rueckseite
+
+
